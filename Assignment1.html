@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration Form</title>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+
+  <form action="/submit_registration" method="post">
+    
+    <!-- Username -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Birthdate -->
+    <label for="birthdate">Birthdate:</label><br>
+    <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+    <!-- Address -->
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 9875824095" required><br><br>
+
+    <!-- Submit and Cancel Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Cancel">
+
+  </form>
+
+</body>
+</html>
